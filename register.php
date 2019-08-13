@@ -15,7 +15,7 @@
 
     <title>Title</title>
 
-    <base href="/" />
+    <base href="/Devfiles/4th_class/" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.7/css/uikit.min.css" />
 </head>
