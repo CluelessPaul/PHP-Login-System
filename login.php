@@ -14,9 +14,7 @@
     <meta name="robots" content="follow">
 
     <title>Title</title>
-
     <base href="/Devfiles/4th_class/" />
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.7/css/uikit.min.css" />
 </head>
 <body>
@@ -27,27 +25,26 @@
                 <h2>Login</h2>
 
                 <div class="uk-margin">
-                    <label class="uk-form-label" for="form-stacked-text">Email</label>
+                    <label class="uk-form-label" for="form-stacked-email">Email</label>
                     <div class="uk-form-controls">
-                        <input class="uk-input" id="form-stacked-text" type="email" required="required" placeholder="email@email.com">
+                        <input class="uk-input" id="form-stacked-email" type="email" required="required" placeholder="email@email.com">
                     </div>
                 </div>
 
                 <div class="uk-margin">
-                    <label class="uk-form-label" for="form-stacked-text">Password</label>
+                    <label class="uk-form-label" for="form-stacked-password">Password</label>
                     <div class="uk-form-controls">
-                        <input class="uk-input" id="form-stacked-text" type="password" required="required" placeholder="Your Password">
+                        <input class="uk-input" id="form-stacked-password" type="password" required="required" placeholder="Your Password">
                     </div>
                 </div>
 
                 <div class="uk-margin">
                     <button class="uk-button uk-button-default" type="submit">LOGIN</button>
                 </div>
+
             </form>
         </div>
     </div>
-
-    <?php require_once  'inc/footer.php'; ?>
 
 </body>
 </html>
