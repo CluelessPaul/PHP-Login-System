@@ -37,6 +37,10 @@ $(document)
             console.log(data);
             if(data.redirect !== undefined) {
                 window.location = data.redirect;
+            } else if (data.error !== undefined) {
+                _error
+                    .text(data.error)
+                    .show();
             }
 
             alert(data.name);

@@ -13,13 +13,33 @@
 
         $return = [];
 
+        $email = Filter::String( $_POST['email'] );
+
         // Make sure the user does not exist.
+        $findUser = $con->prepare('SELECT users.user_id FROM users WHERE users.email = LOWER(:email) LIMIT 1');
+        $findUser->bindParam(':email', $email, PDO::PARAM_STR);
+        $findUser->execute();
+
+        if($findUser->rowCount() == 1) {
+            // User exists
+            // We can also check to see if they are able to log in.
+            $return['error'] = "You already have an account!";
+        } else {
+            // User does not exists. add them now
+
+            $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
+
+            $addUser = $con->prepare('INSERT INTO users(users.email, users.password) VALUES (:email, :password)');
+            $addUser->bindParam(':email', $email, PDO::PARAM_STR);
+            $addUser->bindParam(':password', $password, PDO::PARAM_STR);
+            $addUser->execute();
+            $
 
         // Make sure the user CAN be added AND is added
 
         // Return the proper information back to JavaScript to redirect us.
 
-        $return['redirect'] = '/dashboard.php';
+        $return['redirect'] = './dashboard.php';
 
         $return['name'] = 'Rand Om';
 
@@ -28,8 +48,4 @@
         // Die. Kill the script. Redirect the user. Do something regardless
         exit('test');
     }
-
-    $array = ['test','test2','test3', array('name' => 'Paul','surname' => 'Rojas', 'status' => 'Single',)];
-
-
 
