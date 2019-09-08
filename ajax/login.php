@@ -12,8 +12,7 @@
         $return = [];
 
         $email = Filter::String( $_POST['email'] );
-        $password = $_POST['password'];
-
+        $password = Filter::String( $_POST['password'] );
         $user_found = User::Find($email, true);
 
         if($user_found) {

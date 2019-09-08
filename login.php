@@ -1,9 +1,8 @@
 <?php
-
-// Allow the config
-define('__CONFIG__', true);
-// Require the config
-require_once "inc/config.php";
+    // Allow the config
+    define('__CONFIG__', true);
+    // Require the config
+    require_once "inc/config.php";
 
 ?>
 
@@ -17,7 +16,7 @@ require_once "inc/config.php";
 
     <title>Page Title</title>
 
-    <base href="/" />
+    <base href="/Devfiles/4th_class/" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.24/css/uikit.min.css" />
 </head>
 
@@ -30,16 +29,16 @@ require_once "inc/config.php";
             <h2>Login</h2>
 
             <div class="uk-margin">
-                <label class="uk-form-label" for="form-stacked-text">Email</label>
+                <label class="uk-form-label" for="form-stacked-text-email">Email</label>
                 <div class="uk-form-controls">
-                    <input class="uk-input" id="form-stacked-text" type="email" required='required' placeholder="email@email.com">
+                    <input class="uk-input" value="santiago@gmail.com" id="form-stacked-text-email" type="email" required='required' placeholder="email@email.com">
                 </div>
             </div>
 
             <div class="uk-margin">
-                <label class="uk-form-label" for="form-stacked-text">Password</label>
+                <label class="uk-form-label" for="form-stacked-text-password">Password</label>
                 <div class="uk-form-controls">
-                    <input class="uk-input" id="form-stacked-text" type="password" required='required' placeholder="Your Password">
+                    <input class="uk-input" value="holaholahola" id="form-stacked-text-password" type="password" required='required' placeholder="Your Password">
                 </div>
             </div>
 
