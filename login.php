@@ -31,14 +31,14 @@
             <div class="uk-margin">
                 <label class="uk-form-label" for="form-stacked-text-email">Email</label>
                 <div class="uk-form-controls">
-                    <input class="uk-input" value="santiago@gmail.com" id="form-stacked-text-email" type="email" required='required' placeholder="email@email.com">
+                    <input class="uk-input" id="form-stacked-text-email" type="email" required='required' placeholder="email@email.com">
                 </div>
             </div>
 
             <div class="uk-margin">
                 <label class="uk-form-label" for="form-stacked-text-password">Password</label>
                 <div class="uk-form-controls">
-                    <input class="uk-input" value="holaholahola" id="form-stacked-text-password" type="password" required='required' placeholder="Your Password">
+                    <input class="uk-input" id="form-stacked-text-password" type="password" required='required' placeholder="Your Password">
                 </div>
             </div>
 
