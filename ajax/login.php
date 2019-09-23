@@ -24,7 +24,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         if(password_verify($password, $hash)) {
             // User is signed in
-            $return['redirect'] = '/dashboard.php';
+            $return['redirect'] = './dashboard.php';
 
             $_SESSION['user_id'] = $user_id;
         } else {
