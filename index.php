@@ -15,7 +15,8 @@
     <meta name="robots" content="follow">
     <title>Title</title>
 
-    <base href="/PHP-Login-System/" />
+    <!-- <base href="/PHP-Login-System/" /> -->
+    <base href="/Devfiles/PHP-Login-System/" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.7/css/uikit.min.css" />
 </head>

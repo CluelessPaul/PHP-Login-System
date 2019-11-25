@@ -16,7 +16,8 @@
 
     <title>Page Title</title>
 
-    <base href="/PHP-Login-System/" />
+    <!-- <base href="/PHP-Login-System/" /> -->
+    <base href="/Devfiles/PHP-Login-System/" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.24/css/uikit.min.css" />
 </head>
 
