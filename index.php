@@ -8,7 +8,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!--    <link rel="icon" href="data:,">-->
     <link rel="shortcut icon" href="">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -16,7 +15,7 @@
     <meta name="robots" content="follow">
     <title>Title</title>
 
-    <base href="/Devfiles/4th_class/" />
+    <base href="/PHP-Login-System/" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.7/css/uikit.min.css" />
 </head>
